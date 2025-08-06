@@ -22,7 +22,7 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1.8fr 1fr;
   grid-template-rows: auto auto auto auto;
   grid-template-areas:
     "header header header"
@@ -83,10 +83,10 @@ body {
 }
 
 .photo img {
-  width: 100%;
+  width: 90%;
   height: auto;
-  max-width: 100%;
-  max-height: 400px;
+  max-width: 90%;
+  max-height: 350px;
   display: block;
   margin: 0 auto;
   border-radius: 5px;
@@ -102,10 +102,10 @@ figcaption {
 
 .rate-conversion {
   grid-area: rate;
-  background-color: #f5f5dc;
+  max-width: 340px;
+  margin: 0 auto;
   padding: 15px;
-  color: #000;
-  border: 1px solid #8b4513;
+  white-space: nowrap;
 }
 
 .rate-conversion h3 {
@@ -118,20 +118,19 @@ figcaption {
   padding: 10px;
   margin-bottom: 15px;
   background-color: #fff;
+  white-space: nowrap;
 }
 
-.rate-conversion legend {
-  font-weight: bold;
-}
-
-.rate-conversion label {
-  margin-right: 10px;
+.rate-conversion label,
+.rate-conversion input {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .rate-conversion input[type="text"] {
-  width: 90px;
+  width: 80px;
   padding: 5px;
-  margin: 5px;
+  margin: 0 5px;
 }
 
 .ingredients {
@@ -144,6 +143,7 @@ figcaption {
 
 .directions {
   grid-area: directions;
+  width: 100%;
 }
 
 .ingredients h3,
